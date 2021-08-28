@@ -1,0 +1,165 @@
+*{
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: bold;
+}
+
+nav{
+    text-align: center;
+}
+
+.main-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-div h1{
+    margin-bottom: 2rem;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #086DB8;
+}
+
+.design1{
+    display: block;
+    position: relative;
+}
+
+.share{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.inline{
+    display: inline;
+}
+
+.Gender label{
+    display: block;
+}
+
+.Gender input{
+    padding: 0;
+    margin: 0;
+}
+
+.Gender p{
+    margin: 0;
+}
+
+.gender-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.About input{
+    width: 100%;
+}
+
+.experience-div, .educational-div{
+    position: relative;
+}
+
+.drop{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 10px;
+    top: 8px;
+}
+
+.submit{
+    display: grid;
+    justify-items: end;
+}
+
+.btn{
+    background: #3E53C4;
+    border: 1px solid #086DB8;
+    box-sizing: border-box;
+    border-radius: 10px 0px;
+    width: 170px;
+    height: 40px;
+    color: #fff;
+    font-family: "Playfair Display";
+}
+
+.right-div{
+    display: grid;
+    grid-template-rows: 50px auto;
+    justify-items: end;
+    padding-right: 1rem;
+}
+
+.right-div-img{
+    width: 80%;
+}
+
+.right-div-img img{
+    width: 100%;
+}
+
+.right-div h1{
+    margin: 0 auto;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    height: 30px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media(max-width:980px){
+    .Gender p{
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:758px){
+    *{
+        margin: 1px;
+    }
+    body{
+        font-size: 11px;
+    }
+    .left-div h1{
+        font-size:25px;
+    }
+    .right-div h1{
+        font-size: 25px;
+    }
+    .right-div-img{
+        width: 100%;
+    }
+    .main-div{
+        display: grid;
+        grid-template-columns: auto 170px;
+    }
+    .btn{
+        width: 140px;
+    }
+    .share1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
